@@ -24,13 +24,13 @@ body {
   background: #011731;
   align-items: center;
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 .Dashboard {
   padding: 0px;
   margin: 0px;
-  border-top:1px solid rgba(128, 128, 128, 0.373);
+  border-top: 1px solid rgba(128, 128, 128, 0.373);
   height: 92vh;
   background: #011731;
   display: flex;
@@ -50,7 +50,6 @@ body {
   width: 85vw;
   /* background: #051e3c; */
   background-color: rgb(2, 33, 61);
-
 }
 
 .StepSidebar {
@@ -75,6 +74,50 @@ body {
   font-weight: 600;
   padding: 3rem;
   border-bottom: 2px solid rgba(128, 128, 128, 0.373);
+  /* height: 6vh; */
+}
+
+textarea {
+  resize: none; /* Disable manual resizing */
+  overflow: hidden; /* Prevent scrollbar */
+  width: 80%; /* Optional: full width of the container */
+  color: bisque;
+  font-size: 4rem;
+  font-weight: 600;
+  /* padding: 1rem; */
+  border: 2px solid rgba(128, 128, 128, 0.373);
+  background-color: inherit;
+  line-height: 10vh;
+  height: fit-content;
+  /* min-height: 160px; */
+}
+
+textarea.auto-resize {
+  /* height: auto; */
+  /* min-height: 5vh; Minimum height to start with */
+  transition: height 0.2s ease; /* Optional smooth height transition */
+  color: bisque;
+  font-size: 5rem;
+  font-weight: 600;
+  padding: 0;
+  border: 2px solid rgba(128, 128, 128, 0.373);
+  background-color: inherit;
+}
+
+#HeadingTextArea {
+  color: rgb(213, 207, 207);
+  color: bisque;
+  font-size: 4rem;
+  font-weight: 600;
+  padding: 1rem;
+  border: 2px solid rgba(128, 128, 128, 0.373);
+  background-color: inherit;
+  height: 5vw;
+  margin: 2vw;
+  resize: none;
+  overflow: hidden;
+  max-width: 50vw;
+
   height: 6vh;
 }
 
@@ -85,3 +128,8 @@ body {
   /* height: 60vh; */
   font-size: xx-large;
 }
+/* 
+.ContentTextArea {
+  border: 2px solid green;
+  background-color: green;
+} */

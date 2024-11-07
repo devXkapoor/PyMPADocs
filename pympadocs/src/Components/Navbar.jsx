@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 
-const Navbar = () => {
-  const [NSteps, setNSteps] = useState(0);
-
+const Navbar = ({
+  Mode,
+  setMode,
+  NSteps,
+  setNSteps,
+  ActiveStep,
+  setActiveStep,
+}) => {
   const AddAStep = async () => {
     // const data = await fetch("http://localhost:3000/api/addStep", {
     //   method: "POST",
@@ -18,8 +23,9 @@ const Navbar = () => {
     //     prevState + 1;
     //   });
 
+    setMode("Edit");
     setNSteps(NSteps + 1);
-    console.log(NSteps)
+    // console.log("NSteps:", NSteps);
   };
 
   return (
@@ -27,7 +33,7 @@ const Navbar = () => {
       <div className="Navbar">
         <div>PyMPA - Python Matching Phase Algorithm</div>
         <div>
-          <button onClick={AddAStep}>Add a Step</button>
+          <button onClick={AddAStep}>Add A Step</button>
         </div>
       </div>
     </>

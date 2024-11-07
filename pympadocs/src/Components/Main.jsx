@@ -1,11 +1,25 @@
 import React from "react";
 import StepMain from "./StepMain";
 
-const MainContent = () => {
+const MainContent = ({
+  Mode,
+  setMode,
+  NSteps,
+  setNSteps,
+  ActiveStep,
+  setActiveStep,
+}) => {
   return (
     <>
       <div className="Main">
-        <StepMain />
+        <StepMain
+          Mode={Mode}
+          setMode={setMode}
+          NSteps={NSteps}
+          setNSteps={setNSteps}
+          ActiveStep={ActiveStep}
+          setActiveStep={setActiveStep}
+        />
       </div>
     </>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 
-const StepSidebar = ({ StepNumber }) => {
+const StepSidebar = ({ StepNumber, Mode, setMode }) => {
   return (
     <>
       <div
@@ -9,7 +9,7 @@ const StepSidebar = ({ StepNumber }) => {
           console.log("Hiiii");
         }}
       >
-        {StepNumber}
+        Step {StepNumber}
       </div>
     </>
   );
